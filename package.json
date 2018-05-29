@@ -1,0 +1,49 @@
+{
+  "name": "winston-restify",
+  "version": "0.0.1",
+  "description": "Another transport to sending logs with winston.",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "./node_modules/.bin/standard --verbose | ./node_modules/.bin/snazzy",
+    "test": "jest"
+  },
+  "keywords": [
+    "node",
+    "winston",
+    "restify",
+    "winston restify",
+    "restify clients",
+    "logger",
+    "jest"
+  ],
+  "engineStrict": true,
+  "engines": {
+    "node": ">8.0.0"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carvalhoviniciusluiz/winston-restify.git"
+  },
+  "author": "Carvalho, Vinicius Luiz <carvalho.viniciusluiz@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carvalhoviniciusluiz/winston-restify/issues"
+  },
+  "homepage": "https://github.com/carvalhoviniciusluiz/winston-restify#readme",
+  "dependencies": {
+    "assert-plus": "^1.0.0",
+    "restify-clients": "^2.0.2",
+    "winston": "^2.4.2"
+  },
+  "devDependencies": {
+    "jest": "^22.4.3",
+    "nock": "^9.2.6",
+    "snazzy": "^7.1.1",
+    "standard": "^11.0.1"
+  }
+}
