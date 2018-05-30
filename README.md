@@ -39,6 +39,7 @@ prepend | sends the level and message to request (default: { level: true, messag
 Key | Description
 ------------ | -------------
 method | HTTP method (default: post)
+options | [description](https://github.com/restify/clients#upgrades)
 path | endpoint api (default: '/')
 data | object for sending, supported in POST methods, PUT (default: {})
 

@@ -52,10 +52,10 @@ WinstonRestify.prototype.log = function (level, message, meta, callback) {
       client.basicAuth(login, password)
     }
 
-    let { path, method, data } = meta
+    let { options, path, method, data } = meta
 
+    options = options || { path: path || '/' }
     method = method || 'post'
-    path = path || '/'
     data = data || {}
 
     if (logger.prepend.level) {
@@ -76,9 +76,9 @@ WinstonRestify.prototype.log = function (level, message, meta, callback) {
     }
 
     if (method === 'post' || method === 'put') {
-      client[method](path, data, cb)
+      client[method](options, data, cb)
     } else {
-      client[method](path, cb)
+      client[method](options, cb)
     }
   }
 }

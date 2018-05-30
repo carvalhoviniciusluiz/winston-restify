@@ -52,6 +52,17 @@ describe('winston-restify tests', () => {
     done()
   })
 
+  test('with options', done => {
+    const putScope = nock(url).put('/').reply(200)
+    logger.info('hello.', {
+      method: 'put',
+      options: {
+        path
+      }
+    }, () => expect(putScope.isDone()).toEqual(true))
+    done()
+  })
+
   afterEach(() => {
     nock.removeInterceptor(scope)
   })
