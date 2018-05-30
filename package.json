@@ -1,6 +1,6 @@
 {
   "name": "winston-restify",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Another transport to sending logs with winston.",
   "main": "index.js",
   "scripts": {
